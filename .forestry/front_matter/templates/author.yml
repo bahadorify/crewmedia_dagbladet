@@ -1,0 +1,31 @@
+---
+label: Author
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Name
+  description: Author name, used for SEO (Only when creating the file, filename will
+    be based on this)
+  config:
+    required: true
+- type: text
+  name: slug
+  label: Slug
+  description: Make sure this is the same as the filename.
+  config:
+    required: true
+- type: textarea
+  name: description
+  label: Description
+  description: Post description, used for SEO
+  config:
+    wysiwyg: false
+    required: true
+  default: ''
+- type: text
+  name: keywords
+  label: Keywords
+  description: Comma separated keywords, used for SEO
+  config:
+    required: true

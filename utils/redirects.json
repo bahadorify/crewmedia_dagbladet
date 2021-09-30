@@ -1,0 +1,86 @@
+[
+  {
+    "from": "/refinansiering-av-gjeld",
+    "to": "/tjeneste/forbrukslan/refinansiering"
+  },
+  {
+    "from": "/refinansiering-av-lan",
+    "to": "/tjeneste/forbrukslan/refinansiering"
+  },
+  {
+    "from": "/lan-til-bil",
+    "to": "/tjeneste/forbrukslan/billan"
+  },
+  {
+    "from": "/billan-uten-egenkapital-sok-om-lan-dagbladet",
+    "to": "/tjeneste/forbrukslan/billan"
+  },
+  {
+    "from": "/billig-forbrukslan",
+    "to": "/tjeneste/forbrukslan/"
+  },
+  {
+    "from": "/refinansier-dyre-lan",
+    "to": "/tjeneste/forbrukslan/refinansiere-gjeld"
+  },
+  {
+    "from": "/refinansiering-forbruksgjeld",
+    "to": "/tjeneste/forbrukslan/refinansiere-gjeld"
+  },
+  {
+    "from": "/refinansiering-av-forbrukslan",
+    "to": "/tjeneste/forbrukslan/refinansiere-gjeld"
+  },
+  {
+    "from": "/lan-med-sikkerhet-i-bolig",
+    "to": "/tjeneste/forbrukslan/lan-med-sikkerhet"
+  },
+  {
+    "from": "/lan-penger-uten-sikkerhet-1",
+    "to": "/tjeneste/forbrukslan/lan"
+  },
+  {
+    "from": "/sammenligne-forbrukslan",
+    "to": "/tjeneste/forbrukslan/"
+  },
+  {
+    "from": "/forbrukslan-lav-rente",
+    "to": "/tjeneste/forbrukslan/"
+  },
+  {
+    "from": "/forbrukslan-rente",
+    "to": "/tjeneste/forbrukslan/"
+  },
+  {
+    "from": "/hva-er-forbrukslan",
+    "to": "/tjeneste/forbrukslan/"
+  },
+  {
+    "from": "/beste-forbrukslan",
+    "to": "/tjeneste/forbrukslan/"
+  },
+  {
+    "from": "/sok-forbrukslan",
+    "to": "/tjeneste/forbrukslan/"
+  },
+  {
+    "from": "/billigste-forbrukslan",
+    "to": "/tjeneste/forbrukslan/"
+  },
+  {
+    "from": "/forbrukslan-betalingsanmerkning",
+    "to": "/tjeneste/forbrukslan/lan-med-betalingsanmerkning"
+  },
+  {
+    "from": "/lan-penger-uten-sikkerhet",
+    "to": "/tjeneste/forbrukslan/lan-uten-sikkerhet"
+  },
+  {
+    "from": "/omstartslan-kan-hjelpe-deg-a-rydde-opp-i-okonomien",
+    "to": "/tjeneste/forbrukslan/lan-med-betalingsanmerkning"
+  },
+  {
+    "from": "/fordeler-og-ulemper",
+    "to": "/tjeneste/forbrukslan/refinansiere-forbrukslan"
+  }
+]

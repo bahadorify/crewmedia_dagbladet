@@ -1,0 +1,69 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: 
+webhook_url: 
+sections:
+- type: heading
+  label: Content
+- type: directory
+  path: content/lan/posts
+  label: Posts
+  create: documents
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - post
+- type: directory
+  path: content/lan/pages
+  label: Pages
+  create: documents
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - page
+- type: directory
+  path: content/lan/simplePages
+  label: Simple Pages
+  create: documents
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - simplePage
+- type: directory
+  path: content/lan/authors
+  label: Authors
+  create: documents
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - author
+- type: directory
+  path: content/lan/loan-providers
+  label: Loan Providers
+  create: documents
+  match: "**/*"
+  templates:
+  - loan-provider
+- type: heading
+  label: Settings
+- type: directory
+  path: content/lan/redirects
+  label: Redirects
+  create: all
+  match: "**/*"
+  new_doc_ext: json
+  templates:
+  - redirect
+upload_dir: static/img
+public_path: "/lan/img"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_output_directory: "/content/lan/posts/"
+  install_dependencies_command: npm install
+  preview_docker_image: forestryio/node:12
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: npm run dev

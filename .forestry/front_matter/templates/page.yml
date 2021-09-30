@@ -1,0 +1,108 @@
+---
+label: Page
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+  description: Page title, used for SEO (Only when creating the file, filename will
+    be based on this)
+  config:
+    required: true
+- type: text
+  name: slug
+  label: Slug
+  description: Make sure this is the same as the filename.
+  config:
+    required: true
+- type: datetime
+  name: date
+  label: Date
+  config:
+    required: true
+  default: now
+- type: textarea
+  name: description
+  label: Description
+  description: Post description, used for SEO
+  config:
+    wysiwyg: false
+    required: true
+  default: ''
+- type: text
+  name: keywords
+  label: Keywords
+  description: Comma separated keywords, used for SEO
+  config:
+    required: true
+- name: h1
+  type: text
+  config:
+    required: true
+  label: H1
+  description: H1 for the page
+- name: h2
+  type: text
+  config:
+    required: true
+  label: H2
+  description: Ingress
+- name: short_text
+  type: text
+  config:
+    required: true
+  label: Short text
+  description: Short text before "Les mer"
+- name: read_more
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Read more
+  description: Les mer
+- name: category
+  type: select
+  default: smnlg - Forbrukslån
+  config:
+    required: true
+    options:
+    - smnlg - Forbrukslån
+    - smnlg - Refinansiering
+    - smnlg - Lån med sikkerhet
+    - smnlg - Lån uten sikkerhet
+    - smnlg - Omstartslån
+    - smnlg - Smålån
+    - smnlg - Billån
+    - smnlg - Boliglån
+    - Forbrukslån
+    - Refinansiering
+    - Lån
+    - smnlg - slik kan nordmenn
+    - smnlg - finanstipset
+    - smnlg - motty artikkel forbrukslån
+    - smnlg - Refinansiering med betalingsanmerkning
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+  description: Post category
+- type: text
+  name: affiliate
+  label: Affiliate Link
+  description: Affiliate link used on the post
+- name: schema
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: html-blocks
+  label: Schema
+  description: 'Her kan du lime inn schema som du har generert. <br>Husk at det må
+    starte med: <br>&lt;script type="application/ld+json"&gt;'

@@ -1,0 +1,216 @@
+{
+  "redirects": [
+    {
+      "from": "/refinansiering-av-gjeld",
+      "to": "/refinansiering/"
+    },
+    {
+      "from": "/refinansiering-av-lan",
+      "to": "/refinansiering/"
+    },
+    {
+      "from": "/lan-til-bil",
+      "to": "/billan/"
+    },
+    {
+      "from": "/billan-uten-egenkapital-sok-om-lan-dagbladet",
+      "to": "/billan/"
+    },
+    {
+      "from": "/billig-forbrukslan",
+      "to": "/forbrukslan/"
+    },
+    {
+      "from": "/refinansier-dyre-lan",
+      "to": "/refinansiering/refinansiere-gjeld"
+    },
+    {
+      "from": "/refinansiering-forbruksgjeld",
+      "to": "/refinansiering/refinansiere-gjeld"
+    },
+    {
+      "from": "/refinansiering-av-forbrukslan",
+      "to": "/refinansiering/refinansiere-gjeld"
+    },
+    {
+      "from": "/lan-med-sikkerhet-i-bolig",
+      "to": "/lan/lan-med-sikkerhet"
+    },
+    {
+      "from": "/lan-penger-uten-sikkerhet-1",
+      "to": "/lan/"
+    },
+    {
+      "from": "/sammenligne-forbrukslan",
+      "to": "/forbrukslan/"
+    },
+    {
+      "from": "/forbrukslan-lav-rente",
+      "to": "/forbrukslan/"
+    },
+    {
+      "from": "/forbrukslan-rente",
+      "to": "/forbrukslan/"
+    },
+    {
+      "from": "/hva-er-forbrukslan",
+      "to": "/forbrukslan/"
+    },
+    {
+      "from": "/beste-forbrukslan",
+      "to": "/forbrukslan/"
+    },
+    {
+      "from": "/sok-forbrukslan",
+      "to": "/forbrukslan/"
+    },
+    {
+      "from": "/billigste-forbrukslan",
+      "to": "/forbrukslan/"
+    },
+    {
+      "from": "/forbrukslan-betalingsanmerkning",
+      "to": "/forbrukslan/lan-med-betalingsanmerkning"
+    },
+    {
+      "from": "/lan-penger-uten-sikkerhet",
+      "to": "/forbrukslan/lan-uten-sikkerhet"
+    },
+    {
+      "from": "/omstartslan-kan-hjelpe-deg-a-rydde-opp-i-okonomien",
+      "to": "/forbrukslan/lan-med-betalingsanmerkning"
+    },
+    {
+      "from": "/fordeler-og-ulemper",
+      "to": "/refinansiering/refinansiere-forbrukslan"
+    },
+    {
+      "from": "/lan-uten-sikkerhet",
+      "to": "/forbrukslan/lan-uten-sikkerhet"
+    },
+    {
+      "from": "/lan-pa-dagen",
+      "to": "/forbrukslan/lan-pa-dagen"
+    },
+    {
+      "from": "/smslan",
+      "to": "/forbrukslan/smslan"
+    },
+    {
+      "from": "/smalan",
+      "to": "/forbrukslan/smalan"
+    },
+    {
+      "from": "/forbrukslankalkulator",
+      "to": "/forbrukslan/forbrukslankalkulator"
+    },
+    {
+      "from": "/kredittlan",
+      "to": "/lan/kredittlan"
+    },
+    {
+      "from": "/mikrolan",
+      "to": "/forbrukslan/mikrolan"
+    },
+    {
+      "from": "/lan-pa-minuttet",
+      "to": "/forbrukslan/lan-pa-minuttet"
+    },
+    {
+      "from": "/hvor-mye-kan-jeg-lane",
+      "to": "/lan/hvor-mye-kan-jeg-lane"
+    },
+    {
+      "from": "/lan",
+      "to": "/lan/"
+    },
+    {
+      "from": "/lan-penger-fa-raskt-svar",
+      "to": "/lan/lan-penger-fa-raskt-svar"
+    },
+    {
+      "from": "/ferielan",
+      "to": "/lan/ferielan"
+    },
+    {
+      "from": "/blancolan",
+      "to": "/lan/blancolan"
+    },
+    {
+      "from": "/sammenligne-lan",
+      "to": "/lan/sammenligne-lan"
+    },
+    {
+      "from": "/fordeler-og-ulemper",
+      "to": "/refinansiering/refinansiere-forbrukslan"
+    },
+    {
+      "from": "/refinansiering",
+      "to": "/refinansiering"
+    },
+    {
+      "from": "/refinansiere-smalan",
+      "to": "/refinansiering/refinansiere-smalan"
+    },
+    {
+      "from": "/refinansiering-av-kredittkort",
+      "to": "/refinansiering/refinansiering-av-kredittkort"
+    },
+    {
+      "from": "/refinansiere-gjeld",
+      "to": "/refinansiering/refinansiere-gjeld"
+    },
+    {
+      "from": "/beste-refinansieringslan",
+      "to": "/refinansiering/beste-refinansieringslan"
+    },
+    {
+      "from": "/refinansiere-lan",
+      "to": "/refinansiering/refinansiere-lan"
+    },
+    {
+      "from": "/refinansiering-uten-sikkerhet",
+      "to": "/refinansiering/refinansiering-uten-sikkerhet"
+    },
+    {
+      "from": "/refinansiering-med-betalingsanmerkning",
+      "to": "/refinansiering/refinansiering-med-betalingsanmerkning"
+    },
+    {
+      "from": "/omstartslan",
+      "to": "/refinansiering/omstartslan"
+    },
+    {
+      "from": "/lan-til-oppussing",
+      "to": "/lan/lan-til-oppussing"
+    },
+    {
+      "from": "/lan-til-renovering",
+      "to": "/lan/lan-til-renovering"
+    },
+    {
+      "from": "/lan-med-sikkerhet",
+      "to": "/lan/lan-med-sikkerhet"
+    },
+    {
+      "from": "/batlan",
+      "to": "/lan/batlan"
+    },
+    {
+      "from": "/billan",
+      "to": "/billan/"
+    },
+    {
+      "from": "/forbrukslan-lav-rente-1",
+      "to": "/lan/batalan-uten-egenkapital"
+    },
+    {
+      "from": "/lanerente",
+      "to": "/lan/lanerente"
+    },
+    {
+      "from": "/lan-med-kausjonist-ekstra-sikkerhet",
+      "to": "/lan/lan-med-kausjonist-ekstra-sikkerhet"
+    }
+  ]
+}

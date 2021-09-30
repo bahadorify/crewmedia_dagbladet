@@ -1,0 +1,20 @@
+{
+  "redirects": [
+    {
+      "from": "/go/axo",
+      "to": "https://go.axofinance.com/aff_c?offer_id=56&aff_id=1247"
+    },
+    {
+      "from": "/go/lendo",
+      "to": "https://track.adtraction.com/t/t?a=1581003301&as=1560627241&t=2&tk=1"
+    },
+    {
+      "from": "/go/instabank",
+      "to": "https://track.adtraction.com/t/t?a=1575430439&as=1560627241&t=2&tk=1"
+    },
+    {
+      "from": "/go/instabank-forbrukslan",
+      "to": "https://track.adtraction.com/t/t?a=1591045687&as=1560627241&t=2&tk=1"
+    }
+  ]
+}

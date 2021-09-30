@@ -1,0 +1,174 @@
+---
+label: Post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+  description: Post title, used for SEO (Only when creating the file, filename will
+    be based on this)
+  config:
+    required: true
+- name: featured_image
+  type: file
+  config:
+    maxSize: 64
+  label: Featured Image
+  description: Featured image shown on articles page
+- type: text
+  name: slug
+  label: Slug
+  description: Make sure this is the same as the filename.
+  config:
+    required: true
+- type: datetime
+  name: date
+  label: Date
+  config:
+    required: true
+  default: now
+- type: textarea
+  name: description
+  label: Description
+  description: Post description, used for SEO
+  config:
+    wysiwyg: false
+    required: true
+  default: ''
+- type: text
+  name: keywords
+  label: Keywords
+  description: Comma separated keywords, used for SEO
+  config:
+    required: true
+- name: author
+  type: select
+  default: Espen Flaa Nilsen
+  config:
+    required: true
+    options:
+    - Espen Flaa Nilsen
+    - Christoffer Liven
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Author
+  description: Post author
+- name: type
+  type: select
+  default: supporting
+  config:
+    required: true
+    options:
+    - supporting
+    - main
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Article type
+  description: 'Choose whether this is a main or supporting article. '
+- name: h1
+  type: text
+  config:
+    required: true
+  label: H1
+  description: H1 for the article
+- name: h2
+  type: text
+  config:
+    required: true
+  label: H2
+  description: Ingress
+- name: short_text
+  type: text
+  config:
+    required: true
+  label: Short text
+  description: Short text before "Les mer"
+- name: read_more
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Read more
+  description: Les mer
+- name: tags
+  type: tag_list
+  default: []
+  label: Article Tags
+  description: 'Used for categorizing articles. Examples: Investering, Gjeld, Konkurs,
+    Lån, Pensjon, Kreditt, ...'
+- name: category
+  type: select
+  default: smnlg - Forbrukslån
+  config:
+    required: true
+    options:
+    - smnlg - Forbrukslån
+    - smnlg - Refinansiering
+    - smnlg - Lån med sikkerhet
+    - smnlg - Lån uten sikkerhet
+    - smnlg - Omstartslån
+    - smnlg - Smålån
+    - smnlg - Billån
+    - smnlg - Boliglån
+    - Forbrukslån
+    - Refinansiering
+    - Lån
+    - smnlg - motty
+    - smnlg - slik kan nordmenn
+    - smnlg - finanstipset
+    - smnlg - motty artikkel forbrukslån
+    - smnlg - Refinansiering med betalingsanmerkning
+    - smnlg - lån topp 4
+    source:
+      type: simple
+      section: loan-providers
+      file: content/loan-providers/axo.md
+      path: pages_to_show
+  label: Category
+  description: Category used for selecting the list of offers (sammenligning)
+- name: recommended
+  type: boolean
+  label: Recommended
+  description: It this a recommended article?
+- type: text
+  name: affiliate
+  label: Affiliate Link
+  description: Affiliate link used on the post
+- name: schema
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: html-blocks
+  label: Schema
+  description: 'Her kan du lime inn schema som du har generert. <br>Husk at det må
+    starte med: <br>&lt;script type="application/ld+json"&gt;'
+pages:
+- content/lan/posts/batlan.md
+- content/lan/posts/blancolan.md
+- content/lan/posts/efaktura.md
+- content/lan/posts/hva-er-annuitetslan.md
+- content/lan/posts/hva-er-finansieringsforetak.md
+- content/lan/posts/hva-er-kredittvurdering.md
+- content/lan/posts/hvordan-kan-du-forbedre-din-kredittverdighet.md
+- content/lan/posts/hvordan-spare-penge-ved-lane-penge-danmark.md
+- content/lan/posts/hyttelan.md
+- content/lan/posts/kredittlan.md
+- content/lan/posts/lan-med-betalingsanmerkning.md
+- content/lan/posts/lan-med-sikkerhet.md
+- content/lan/posts/lan-til-campingvogn.md
+- content/lan/posts/lan-uten-kredittsjekk.md
+- content/lan/posts/lane-penger.md
+- content/lan/posts/mc-lan.md
+- content/lan/posts/sammenligne-lan.md

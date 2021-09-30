@@ -1,0 +1,112 @@
+backend:
+  name: github
+  repo: omegamedia/crewmedia_dagbladet
+  branch: heroku
+  base_url: https://netlify-gh-oauth.herokuapp.com
+
+media_folder: static/tjeneste/forbrukslan/img
+public_folder: /tjeneste/forbrukslan/img
+
+collections:
+  - name: 'posts'
+    label: 'Posts'
+    format: 'frontmatter'
+    folder: 'content/posts'
+    create: true
+    slug: '{{fields.slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - {
+          label: 'Keywords (comma seperated)',
+          name: 'keywords',
+          widget: 'string',
+        }
+      - {
+          label: 'Author',
+          name: 'author',
+          widget: 'select',
+          options: ['Espen Flaa Nilsen', 'Christoffer Liven'],
+        }
+      - {
+          label: 'Category',
+          name: 'category',
+          widget: 'select',
+          options: ['Forbrukslån', 'Refinansiering', 'Lån'],
+        }
+      - {
+          label: 'Recommended',
+          name: 'recommended',
+          widget: 'boolean',
+          default: false,
+          required: false,
+        }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Affiliate link', name: 'affiliate', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'pages'
+    label: 'Pages '
+    format: 'frontmatter'
+    folder: 'content/pages'
+    create: true
+    slug: '{{fields.slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - {
+          label: 'Keywords (comma seperated)',
+          name: 'keywords',
+          widget: 'string',
+        }
+      - {
+          label: 'Category',
+          name: 'category',
+          widget: 'select',
+          options: ['Forbrukslån', 'Refinansiering', 'Lån'],
+        }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Affiliate link', name: 'affiliate', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'simplePages'
+    label: 'Simple Pages'
+    format: 'frontmatter'
+    folder: 'content/simplePages'
+    create: true
+    slug: '{{fields.slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - {
+          label: 'Keywords (comma seperated)',
+          name: 'keywords',
+          widget: 'string',
+        }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'authors'
+    label: 'Authors'
+    format: 'frontmatter'
+    folder: 'content/authors'
+    create: true
+    slug: '{{fields.slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - {
+          label: 'Keywords (comma seperated)',
+          name: 'keywords',
+          widget: 'string',
+        }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }

@@ -1,0 +1,23 @@
+---
+label: Redirect
+hide_body: true
+fields:
+- name: redirects
+  type: field_group_list
+  fields:
+  - name: from
+    type: text
+    config:
+      required: true
+    label: From
+  - name: to
+    type: text
+    config:
+      required: true
+    label: To
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Redirects
+  description: List of redirects

@@ -1,0 +1,364 @@
+---
+label: Loan provider
+hide_body: false
+display_field: name
+fields:
+- type: text
+  name: name
+  label: Name
+  description: Loan provider name
+  config:
+    required: true
+- name: logo
+  type: file
+  config:
+    maxSize: 64
+  label: Logo
+- name: loan_amount
+  type: field_group
+  config: {}
+  fields:
+  - name: min
+    type: number
+    label: Min (NOK)
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 1000
+      required: false
+  - name: max
+    type: number
+    label: Max (NOK)
+    description: ''
+    default: 1000
+    required: true
+    config:
+      min: 
+      max: 
+      step: 1000
+      required: true
+  label: Loan amount
+  description: Minimum and maximum loan amounts offered by loan provider (NOK)
+- name: eff_interest
+  type: field_group
+  config: {}
+  fields:
+  - name: min
+    type: number
+    label: Min (%)
+    description: ''
+    default: 0.01
+    required: true
+    config:
+      min: 
+      max: 
+      step: 0.01
+      required: true
+  - name: max
+    type: number
+    label: Max (%)
+    description: ''
+    default: 0.01
+    required: true
+    config:
+      min: 
+      max: 
+      step: 0.01
+      required: false
+  label: Effective Interest
+  description: Minimum and maximum effective interest (%)
+- name: loan_period
+  type: field_group
+  config: {}
+  fields:
+  - name: min
+    type: number
+    label: Min (years)
+    description: ''
+    default: 1
+    required: true
+    config:
+      min: 0
+      max: 
+      step: 1
+      required: true
+  - name: max
+    type: number
+    label: Max (years)
+    description: ''
+    default: 15
+    required: true
+    config:
+      min: 0
+      max: 
+      step: 1
+      required: true
+  label: Loan period
+  description: Låneperiode
+- name: loan_example
+  type: field_group
+  config: {}
+  fields:
+  - name: loan_amount
+    type: number
+    label: Loan Amount (NOK)
+    description: ''
+    default: 
+    required: true
+    config:
+      min: 0
+      max: 
+      step: 10000
+      required: true
+  - name: years
+    type: number
+    label: Years
+    description: Number of years of the mortgage
+    default: 
+    required: true
+    config:
+      min: 1
+      max: 
+      step: 1
+      required: true
+  - name: effective
+    type: number
+    label: Effective Interest (%)
+    description: Effective interest rate
+    default: 
+    required: true
+    config:
+      min: 0
+      max: 
+      step: 0.01
+      required: true
+  - name: cost
+    type: number
+    label: Cost (NOK)
+    default: 
+    required: true
+    config:
+      min: 0
+      max: 
+      step: 1
+      required: true
+    description: Cost of mortgage (excluding the original loan amount)
+  - name: monthly_payment
+    type: number
+    label: Monthly Payment (NOK)
+    description: ''
+    default: 
+    required: true
+    config:
+      min: 0
+      max: 
+      step: 1
+  label: Loan Example
+  description: An example of the provided loan
+- name: age
+  type: number
+  label: Age requirement
+  description: Minimum age requirement
+  default: 
+  required: true
+  config:
+    min: 1
+    max: 100
+    step: 1
+    required: true
+- name: income
+  type: select
+  default: Ingen
+  config:
+    required: true
+    options:
+    - Ingen
+    - Fast inntekt
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Income requirement
+  description: Inntektskrav
+- name: payment
+  type: number
+  label: Payment (days)
+  description: Time it takes for loan to be paid into customer's account
+  default: 1
+  required: true
+  config:
+    min: 1
+    max: 
+    step: 1
+    required: true
+- name: key_info
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+    source:
+      type: simple
+  label: Key info
+  description: Nøkkelinfo
+- name: terms
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Terms
+  description: Vilkår
+- name: advantages
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Advantages
+  description: Fordler
+- name: disadvantages
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Disadvantages
+  description: Ulemper
+- name: pages_to_show
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: simple
+      section: posts
+      file: content/posts/axo-finans-as.md
+    options:
+    - smnlg - Forbrukslån
+    - smnlg - Refinansiering
+    - smnlg - Lån med sikkerhet
+    - smnlg - Lån uten sikkerhet
+    - smnlg - Omstartslån
+    - smnlg - Smålån
+    - smnlg - Billån
+    - smnlg - Boliglån
+    - smnlg - motty
+    - smlg - Motty
+    - smnlg - slik kan nordmenn
+    - smnlg - finanstipset
+    - smnlg - motty artikkel forbrukslån
+    - smnlg - Refinansiering med betalingsanmerkning
+    - smnlg - lån topp 4
+  label: Categories to show
+  description: Categories that will show this loan provider
+- name: rank
+  type: number
+  label: Rank
+  default: 1
+  required: true
+  config:
+    min: 1
+    max: 
+    step: 1
+    required: true
+  description: Lower numbers are shown higher in the list. E.g., Rank 1 is shown first.
+- name: rating
+  type: number
+  label: Rating
+  description: Rate the loan provider from 100
+  default: 0
+  required: true
+  config:
+    min: 0
+    max: 100
+    step: 1
+    required: true
+- name: marker_text
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - "\U0001F4C4  En søknad - Flere tilbud"
+    - "\U0001F44D  Anbefalt"
+    - "\U0001F60E  Flest banker"
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Marker text
+  description: Special text for the loan provider
+- type: text
+  name: affiliate
+  label: Affiliate link
+- name: customer_service
+  type: text
+  config:
+    required: false
+  label: Customer service link
+  description: Kundeservice
+- name: contact
+  type: field_group
+  config: {}
+  fields:
+  - name: name
+    type: text
+    config:
+      required: true
+    label: Name
+    description: Selskap
+  - name: email
+    type: text
+    config:
+      required: true
+    label: Email
+  - name: tel
+    type: text
+    config:
+      required: true
+    label: Phone number
+  - name: address
+    type: list
+    config:
+      use_select: false
+      min: 
+      max: 
+    label: Address
+    description: Put each address line as a separate item
+  label: Contact Info
+- name: opening_hours
+  type: field_group_list
+  fields:
+  - name: weekdays
+    type: text
+    config:
+      required: true
+    label: Weekdays
+    description: 'Eks: Man - Tors'
+  - name: hours
+    type: text
+    config:
+      required: true
+    label: Hours
+    description: 'Eks: 09:00 - 20:00'
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Opening hours
+  description: Åpningstider
+pages:
+- content/lan/loan-providers/Svea finans.md
+- content/lan/loan-providers/Tjenestetorget boliglån.md
+- content/lan/loan-providers/Zen-finans.md
+- content/lan/loan-providers/bank2.md
+- content/lan/loan-providers/dreams.md
+- content/lan/loan-providers/kredittlånet.md
+- content/lan/loan-providers/santander-consumer-bank.md
